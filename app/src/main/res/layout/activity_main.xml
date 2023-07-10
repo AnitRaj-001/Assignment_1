@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/back"
+    >
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/baseline_cancel_24"
+        android:padding="12dp"
+        android:paddingStart="12dp"
+        android:text="@string/rishabh_jain"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints,RtlSymmetry,UseCompatTextViewDrawableXml"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="143dp"
+        android:layout_height="142dp"
+        android:layout_below="@+id/text1"
+        android:layout_centerInParent="true"
+        android:background="@drawable/image"
+        android:elevation="30dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <ImageView
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/text1"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/baseline_favorite_24"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="119dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_4_6"
+        android:textColor="@color/rating"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:drawableEndCompat="@drawable/baseline_star_24"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="215dp" />
+
+    <TextView
+        style="bold"
+        android:layout_width="78dp"
+        android:layout_height="37dp"
+        android:gravity="center"
+        android:hint="@string/rating"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <RelativeLayout
+        android:layout_width="412dp"
+        android:layout_height="645dp"
+        android:background="@drawable/mid_back"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="269dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="9dp"
+            android:text="@string/schedule_this_tutor"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/box"
+                android:elevation="5dp"
+                android:hint="Date"
+                android:paddingVertical="18dp"
+                android:paddingStart="7dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/baseline_calendar_month_24"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/box"
+                android:elevation="5dp"
+                android:gravity="end"
+                android:hint="Time"
+                android:paddingVertical="16dp"
+                android:paddingEnd="7dp"
+                android:text=""
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:drawableEndCompat="@drawable/baseline_access_time_filled_24"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
